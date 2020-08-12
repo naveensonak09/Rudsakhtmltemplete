@@ -3,6 +3,8 @@
 <head>
     <title>Rudsak</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -24,12 +26,19 @@
                             </a>
                         </div>
                         <div class="bag">
-                            <a href="#">
+                            <a id="bag" href="#">
                                 <h5>BAG (0) <i class="fa fa-chevron-down arrow_color"></i></i>
                                 </h5>
                             </a>
-
+                            <div style="display: none;" class="bag_show">hello </div>
                         </div>
+                        <script>
+                            $(document).ready(function() {
+                                $('#bag').click(function() {
+                                    $('.bag_show').toggle();
+                                });
+                            });
+                        </script>
                     </div>
                 </div>
                 <div class="menubar ">
@@ -48,8 +57,10 @@
                 </div>
             </div>
             <div class="header_bottom">
-                <a href="#"><img class="cut" src="img/cut.png"></a>
-                <input type="text" placeholder="What are you looking for ?"><button class="btn btn1">Search</button>
+                <a id="cut" href="#"><img class="cut" src="img/cut.png"></a>
+                <div class="show_search">
+                    <input type="text" placeholder="What are you looking for ?"><button class="btn btn1">Search</button>
+                </div>
             </div>
         </div>
         <div class="banner">
@@ -57,7 +68,134 @@
             <div class="arrow_left"><a class="arrow_ah" href="#"><i class="fa fa-chevron-left"></i></a></div>
             <div class="arrow_right"><a class="arrow_ah" href="#"><i class="fa fa-chevron-right"></i></a></div>
         </div>
+        <div class="tags">
+            <div class="tag1">
+                <img src="img/flower.png">
+                <a href="#">
+                    <P style="margin-top: 0px; font-size: 14; font-weight: 600;">100 % CANADIAN<br> DESIGNS</P>
+                </a>
+            </div>
+            <div class="tag2">
+                <img src="img/v.png">
+                <a href="#">
+                    <P class="tagline">ESTABLISHED<br> SINCE 1994</P>
+                </a>
+            </div>
+            <div class="tag3">
+                <img src="img/tshirt.png">
+                <a href="#">
+                    <P class="tagline">GENUINE LEATHER<br> GOODS</P>
+                </a>
+            </div>
+        </div>
+        <div class="body_content">
+            <div class="content1">
+                <div class="shoes">
+                    <img class="shoes_img" src="img/shoes.png">
+                    <div class="shoes_text"><a href="#">UP TO 30% OFF SPRING SHOES</a></div>
+                </div>
+                <div class="bags">
+                    <img class="bags_img" src="img/bags.png">
+                    <div class="bags_txt">
+                        <a href="#">
+                            <P class="bags_text">BECAUSE SHE ROCKS</P>
+                            <P class="bag_text2">CELEBRATE HER, MAY 8</P>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="content2">
+                <div class="women">
+                    <img class="women_img" src="img/women-back.png">
+                </div>
+                <div class="femmes">
+                    <div class="fem_text">
+                        <p class="femm"><a href="#">FEMMES</a>
+                        </p>
+                        <p class="femm1"><a href="#">NOUVELLE COLLECTION</a></p>
+                        <P class="femm2"><a href="#">lipsum as it is sometimes known, dummy text</a></P>
+                    </div>
+                    <div class="fem_img">
+                        <div class="img1"><img class="wo_img" src="img/women1.png">
+                            <p class="wo_text"><a href="#">MEDINA</a></p>
+                            <p class="wo_pp">$79.99</p>
+                        </div>
+                        <div class="img2"><img class="wo_img" src="img/women2.png">
+                            <p class="wo_text"><a href="#">MEDINA</a></p>
+                            <p class="wo_pp">$119.99</p>
+                        </div>
+                    </div>
+                    <div class="fem_dot"></div>
+                </div>
+            </div>
+            <div class="content3">
+                <div class="femmes">
+                    <div class="fem_text">
+                        <p class="femm"><a href="#">FEMMES</a>
+                        </p>
+                        <p class="femm1"><a href="#">NOUVELLE COLLECTION</a></p>
+                        <P class="femm2"><a href="#">lipsum as it is sometimes known, dummy text</a></P>
+                    </div>
+                    <div class="fem_img">
+                        <div class="img1"><img class="wo_img" src="img/women1.png">
+                            <p class="wo_text"><a href="#">MEDINA</a></p>
+                            <p class="wo_pp">$79.99</p>
+                        </div>
+                        <div class="img2"><img class="wo_img" src="img/women2.png">
+                            <p class="wo_text"><a href="#">MEDINA</a></p>
+                            <p class="wo_pp">$119.99</p>
+                        </div>
+                    </div>
+                    <div class="fem_dot"></div>
+                </div>
+                <div class="men">
+                    <img class="men_img" src="img/menblack.png">
+                </div>
+
+            </div>
+        </div>
+        <div class="coursel">
+            <div class="heading">
+                <p class="les_head">LES ESSENTIELS</p>
+            </div>
+            <div class="images">
+                <div class="image1">
+                    <img class="men_img" src="img/men1.png">
+                    <p class="toshow">MEDINA</p>
+                    <P class="toshow1">$79.99</P>
+                </div>
+                <div class="image1"><img class="men_img" src="img/men2.png">
+                    <p class="toshow">MARIBEL</p>
+                    <P class="toshow1">$119.99</P>
+                </div>
+                <div class="image1"><img class="men_img" src="img/men1.png">
+                    <p class="toshow">MEDINA</p>
+                    <P class="toshow1">$79.99</P>
+                </div>
+                <div class="image1"><img class="men_img" src="img/men2.png">
+                    <p class="toshow">MARIBEL</p>
+                    <P class="toshow1">$119.99</P>
+                </div>
+                <div class="image1"><img class="men_img" src="img/men1.png">
+                    <p class="toshow">MEDINA</p>
+                    <P class="toshow1">$79.99</P>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer1"></div>
+            <div class="footer2"></div>
+            <div class="footer3"></div>
+        </div>
     </div>
 </body>
 
 </html>
+
+<script>
+    $(document).ready(function() {
+        $('#cut').click(function() {
+            $('.show_search').toggle();
+        });
+    });
+</script>

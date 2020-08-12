@@ -52,21 +52,26 @@
                         <a href="#">SALES</a>
                     </div>
                     <div class="search">
-                        <a href="#"> <i class="fa fa-search icon"></i></a>
+                        <a href="#" id="cut"> <i class="fa fa-search icon"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="header_bottom">
-                <a id="cut" href="#"><img class="cut" src="img/cut.png"></a>
-                <div class="show_search">
-                    <input type="text" placeholder="What are you looking for ?"><button class="btn btn1">Search</button>
-                </div>
+            <div class="header_bottom" style="display: none;">
+                <!-- <a href="#"><img class="cut" src="img/cut.png"></a> -->
+                <input type="text" placeholder="What are you looking for ?"><button class="btn btn1">Search</button>
             </div>
+            <script>
+                $(document).ready(function() {
+                    $('#cut').click(function() {
+                        $('.header_bottom').toggle();
+                    });
+                });
+            </script>
         </div>
         <div class="banner">
             <img width="100%" src="img/banner.png">
-            <div class="arrow_left"><a class="arrow_ah" href="#"><i class="fa fa-chevron-left"></i></a></div>
-            <div class="arrow_right"><a class="arrow_ah" href="#"><i class="fa fa-chevron-right"></i></a></div>
+            <!-- <div class="arrow_left"><a class="arrow_ah" href="#"><i class="fa fa-chevron-left"></i></a></div>
+            <div class="arrow_right"><a class="arrow_ah" href="#"><i class="fa fa-chevron-right"></i></a></div> -->
         </div>
         <div class="tags">
             <div class="tag1">
@@ -183,7 +188,9 @@
             </div>
         </div>
         <div class="footer">
-            <div class="footer1"></div>
+            <div class="footer1">
+                <p>STAY CONNECTED</p><input type="text" placeholder="ENTER YOUR EMAIL"><button>WOMEN</button><button>MEN</button>
+            </div>
             <div class="footer2"></div>
             <div class="footer3"></div>
         </div>
@@ -191,11 +198,3 @@
 </body>
 
 </html>
-
-<script>
-    $(document).ready(function() {
-        $('#cut').click(function() {
-            $('.show_search').toggle();
-        });
-    });
-</script>

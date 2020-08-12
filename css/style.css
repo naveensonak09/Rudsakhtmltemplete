@@ -1,4 +1,162 @@
 body {
     margin: 0px;
     padding: 0px;
+    font-family: sans-serif;
+}
+
+.container {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+}
+
+.header_top {
+    /* width: 100%; */
+    margin-right: 5px;
+    height: 120px;
+    background-color: #d5dce4;
+}
+
+.top_head {
+    width: 100%;
+    height: 50px;
+    margin-top: -11px;
+}
+
+.top_left {
+    float: left;
+    padding-left: 50px;
+    width: 40%;
+    height: 45px;
+}
+
+.top_right {
+    float: right;
+    width: 30%;
+    /* padding-right: 60px; */
+    height: 45px;
+}
+
+.login {
+    float: left;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.bag {
+    float: left;
+}
+
+.header_bottom {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+}
+
+.topnav {
+    overflow: hidden;
+    float: left;
+    padding-left: 30px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 8px 20px;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.menubar {
+    margin-top: 15px;
+}
+
+.logo {
+    float: left;
+    padding-left: 250px;
+}
+
+.search {
+    float: left;
+    height: 55px;
+    width: 60px;
+    background-color: #fff;
+}
+
+input[type=text] {
+    width: 45%;
+    padding: 12px 20px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    margin-left: 250px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.btn {
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn1 {
+    background-color: white;
+    color: black;
+    border: 2px solid #000;
+}
+
+.cut {
+    right: 325px;
+    top: 115px;
+    position: absolute;
+}
+
+.icon {
+    padding-top: 10px;
+    padding-left: 22px;
+}
+
+.banner {
+    margin-right: 5px;
+    height: 400px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.arrow_left {
+    float: left;
+    position: absolute;
+    top: 420px;
+    left: 45px;
+    color: #fff;
+    font-size: xx-large;
+}
+
+.arrow_right {
+    float: right;
+    top: 420;
+    position: absolute;
+    right: 45px;
+    color: #fff;
+    font-size: xx-large;
+}
+
+.arrow_ah {
+    color: #fff;
 }

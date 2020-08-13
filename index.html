@@ -68,23 +68,31 @@
                         <a href="#">MEN</a>
                         <a href="#">KIDS</a>
                         <a href="#">SALES</a>
+                        <a id="cut" class="active" href="#"><i class="fa fa-search icon"></i></a>
                     </div>
-                    <div class="search">
+                    <!-- <div class="search">
                         <a href="#" id="cut"> <i class="fa fa-search icon"></i></a>
-                    </div>
+                    </div> -->
                 </div>
-            </div>
-            <div class="header_bottom" style="display: none;">
-                <!-- <a href="#"><img class="cut" src="img/cut.png"></a> -->
-                <input type="text" placeholder="What are you looking for ?"><button class="btn btn1">Search</button>
             </div>
             <script>
                 $(document).ready(function() {
                     $('#cut').click(function() {
+                        $('.active').removeClass('remove');
+                        $(this).addClass('selected');
                         $('.header_bottom').toggle();
+                    });
+                    $('#cut').click(function() {
+                        $('.active').removeClass('remove');
+                        self.toggleClass('remove');
                     });
                 });
             </script>
+            <div class="header_bottom" style="display: none;">
+                <!-- <a href="#"><img class="cut" src="img/cut.png"></a> -->
+                <input type="text" placeholder="What are you looking for ?"><button class="btn btn1">Search</button>
+            </div>
+
         </div>
         <div class="banner">
             <!-- <img width="100%" src="img/banner.png"> -->

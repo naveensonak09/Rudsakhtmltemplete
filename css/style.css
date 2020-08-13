@@ -42,15 +42,13 @@
     
     .top_right {
         float: right;
-        width: 28%;
+        width: 27%;
         margin-top: -11px;
         height: 45px;
     }
     
     .login {
         float: left;
-        margin-left: 63px;
-        margin-right: 40px;
     }
     
     .accunt {
@@ -59,7 +57,7 @@
     }
     
     .bag {
-        float: left;
+        float: right;
     }
     
     .ac_bag {
@@ -240,8 +238,22 @@
     }
     
     .icon {
-        padding-top: 10px;
-        padding-bottom: 10px;
+        padding-top: 3px;
+        padding-bottom: 5px;
+    }
+    /* #cut:hover {
+        background-color: #fff;
+    } */
+    /* #cut:active {
+        background-color: #fff;
+    } */
+    
+    .selected {
+        background-color: #fff;
+    }
+    
+    .remove {
+        background-color: #d5dce4;
     }
     
     .banner {

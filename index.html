@@ -15,7 +15,7 @@
                 <div class="top_head">
                     <div class="top_left">
                         <a id="lang" href="#">
-                            <h5 id="set_lang" name="set_lang" style="float: left;">ENGLISH</h5><img style="margin: 28px 5px;" src="img/arrowwhite.png">
+                            <h5 id="set_lang" name="set_lang" style="float: left;">ENGLISH</h5><img class="top_icon" style="" src="img/arrowwhite.png">
                         </a>
                         <div style="display: none;" class="show_lang">
                             <i class="fa fa-caret-up lang_arrow" aria-hidden="true"></i>
@@ -39,7 +39,7 @@
                         </div>
                         <div class="bag">
                             <a id="bag" href="#"><img class="ac_bag" src="img/ac_bag.png">
-                                <h5>BAG (0)</h5><img style="margin: -36px 73px;" src="img/arrowwhite.png">
+                                <h5>BAG (0)</h5><img class="top_right_icon" style="" src="img/arrowwhite.png">
                             </a>
                             <div style="display: none;" class="bag_show">
                                 <i class="fa fa-caret-up bag_arrow" aria-hidden="true"></i>
@@ -68,7 +68,7 @@
                         <a href="#">MEN</a>
                         <a href="#">KIDS</a>
                         <a href="#">SALES</a>
-                        <a id="cut" class="active" href="#"><i class="fa fa-search icon"></i></a>
+                        <a id="cut" href="#"><i class="fa fa-search icon"></i></a>
                     </div>
                     <!-- <div class="search">
                         <a href="#" id="cut"> <i class="fa fa-search icon"></i></a>
@@ -78,15 +78,47 @@
             <script>
                 $(document).ready(function() {
                     $('#cut').click(function() {
-                        // $('.active').removeClass('remove');
-                        // $(this).addClass('selected');
+                        $('.active').removeClass('selected');
+                        $(this).addClass('selected');
                         $('.header_bottom').toggle();
                     });
-                    // $('#cut').click(function() {
-                    //     $('.active').removeClass('remove');
-                    //     self.toggleClass('remove');
-                    // });
+
+
                 });
+
+                hide = true;
+                $('body').on("click", function() {
+                    if (hide) $('.active').removeClass('active');
+                    hide = true;
+                });
+
+                // add and remove .active
+                $('body').on('click', '.dropdown', function() {
+
+                    var self = $(this);
+
+                    if (self.hasClass('active')) {
+                        $('.dropdown').removeClass('active');
+                        return false;
+                    }
+
+                    $('.dropdown').removeClass('active');
+
+                    self.toggleClass('active');
+                    hide = false;
+                });
+
+
+
+
+
+
+                // $(document).mouseup(function(e) {
+                //     if ($(e.target).closest(".header_bottom").length ===
+                //         0) {
+                //         $(".header_bottom").hide();
+                //     }
+                // });
             </script>
             <div class="header_bottom" style="display: none;">
                 <!-- <a href="#"><img class="cut" src="img/cut.png"></a> -->
@@ -103,7 +135,7 @@
             <div class="tag1">
                 <img src="img/flower.png">
                 <a href="#">
-                    <P style="margin-top: 0px; font-size: 13; letter-spacing: 1; font-weight: 600;">100 % CANADIAN<br> DESIGNS</P>
+                    <P class="mobtag" style="">100 % CANADIAN<br> DESIGNS</P>
                 </a>
             </div>
             <div class="tag2">

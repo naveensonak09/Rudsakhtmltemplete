@@ -78,19 +78,19 @@
             <script>
                 $(document).ready(function() {
                     $('#cut').click(function() {
-                        $('.active').removeClass('remove');
-                        $(this).addClass('selected');
+                        // $('.active').removeClass('remove');
+                        // $(this).addClass('selected');
                         $('.header_bottom').toggle();
                     });
-                    $('#cut').click(function() {
-                        $('.active').removeClass('remove');
-                        self.toggleClass('remove');
-                    });
+                    // $('#cut').click(function() {
+                    //     $('.active').removeClass('remove');
+                    //     self.toggleClass('remove');
+                    // });
                 });
             </script>
             <div class="header_bottom" style="display: none;">
                 <!-- <a href="#"><img class="cut" src="img/cut.png"></a> -->
-                <input type="text" placeholder="What are you looking for ?"><button class="btn btn1">Search</button>
+                <input type="text" class="place" placeholder="What are you looking for ?"><button class="btn btn1">Search</button>
             </div>
 
         </div>
@@ -148,13 +148,17 @@
                         <P class="femm2"><a href="#">lipsum as it is sometimes known, dummy text</a></P>
                     </div>
                     <div class="fem_img">
-                        <div class="img1"><img class="wo_img" src="img/women1.png">
+                        <div class="img1">
+                            <!-- <a href="#"><img class="wo_img" src="img/women1.png"></a> -->
                             <p class="wo_text"><a href="#">MEDINA</a></p>
                             <p class="wo_pp">$79.99</p>
                         </div>
-                        <div class="img2"><img class="wo_img" src="img/women2.png">
+                        <div class="img2">
+                            <!-- <a href="#"><img class="wo_img" src="img/women2.png"></a> -->
+
                             <p class="wo_text"><a href="#">MEDINA</a></p>
                             <p class="wo_pp">$119.99</p>
+
                         </div>
                     </div>
                     <div class="fem_dot"></div>
@@ -170,11 +174,13 @@
                         <P class="femm2"><a href="#">lipsum as it is sometimes known, dummy text</a></P>
                     </div>
                     <div class="fem_img">
-                        <div class="img1"><img class="wo_img" src="img/men1.png">
+                        <div class="img11">
+                            <!-- <img class="wo_img" src="img/men1.png"></a> -->
                             <p class="wo_text"><a href="#">MEDINA</a></p>
                             <p class="wo_pp">$79.99</p>
                         </div>
-                        <div class="img2"><img class="wo_img" src="img/men2.png">
+                        <div class="img22">
+                            <!-- <a href="#"><img class="wo_img" src="img/men2.png"></a> -->
                             <p class="wo_text"><a href="#">MEDINA</a></p>
                             <p class="wo_pp">$119.99</p>
                         </div>
@@ -193,24 +199,28 @@
             </div>
             <div class="images">
                 <div class="image1">
-                    <img class="men_img" src="img/men1.png">
-                    <p class="toshow">MEDINA</p>
+                    <!-- <a href="#"><img class="men_img" src="img/men1.png"></a> -->
+                    <p class="toshow"><a href="#">MEDINA</a></p>
                     <P class="toshow1">$79.99</P>
                 </div>
-                <div class="image1"><img class="men_img" src="img/men2.png">
-                    <p class="toshow">MARIBEL</p>
+                <div class="image2">
+                    <!-- <a href="#"><img class="men_img" src="img/men2.png"></a> -->
+                    <p class="toshow"><a href="#">MARIBEL</a></p>
                     <P class="toshow1">$119.99</P>
                 </div>
-                <div class="image1"><img class="men_img" src="img/men1.png">
-                    <p class="toshow">MEDINA</p>
+                <div class="image3">
+                    <!-- <a href="#"><img class="men_img" src="img/men1.png"></a> -->
+                    <p class="toshow"><a href="#">MEDINA</a></p>
                     <P class="toshow1">$79.99</P>
                 </div>
-                <div class="image1"><img class="men_img" src="img/men2.png">
-                    <p class="toshow">MARIBEL</p>
+                <div class="image4">
+                    <!-- <a href="#"><img class="men_img" src="img/men2.png"></a> -->
+                    <p class="toshow"><a href="#">MARIBEL</a></p>
                     <P class="toshow1">$119.99</P>
                 </div>
-                <div class="image1"><img class="men_img" src="img/men1.png">
-                    <p class="toshow">MEDINA</p>
+                <div class="image5">
+                    <!-- <a href="#"><img class="men_img" src="img/men1.png"></a> -->
+                    <p class="toshow"><a href="#">MEDINA</a></p>
                     <P class="toshow1">$79.99</P>
                 </div>
             </div>
@@ -220,7 +230,7 @@
                 <span class="stay">STAY CONNECTED </span><input type="input" class="form__field" placeholder="ENTER YOUR EMAIL" /><button class="foot_btn foot_btn1">WOMEN</button><button class="foot_btn foot_btn1">MEN</button>
             </div>
             <div class="footer2">
-                <div class="foot1"></div>
+                <div class="foot1 none"></div>
                 <div class="foot1 text">
                     <p class="foot_text">CUSTOMER SERVICE</p>
                     <a href="#">FAQ</a>
@@ -249,7 +259,7 @@
                     <a href="#"><img class="social_icon" src="img/instagram.png"></a>
                     <a href="#"><img class="social_icon" src="img/youtube.png"></a>
                 </div>
-                <div class="foot1"></div>
+                <div class="foot1 none"></div>
             </div>
             <div style="display: none;" class="show_curren">
 

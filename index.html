@@ -3,9 +3,13 @@
 <head>
     <title>Rudsak</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="owl-carousel/owl.theme.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="owl-carousel/owl.carousel.js"></script>
+
 </head>
 
 <body>
@@ -39,7 +43,7 @@
                         </div>
                         <div class="bag">
                             <a id="bag" href="#"><img class="ac_bag" src="img/ac_bag.png">
-                                <h5>BAG (0)</h5><img class="top_right_icon" style="" src="img/arrowwhite.png">
+                                <h5>BAG (0)</h5><img class="top_right_icon" src="img/arrowwhite.png">
                             </a>
                             <div style="display: none;" class="bag_show">
                                 <i class="fa fa-caret-up bag_arrow" aria-hidden="true"></i>
@@ -86,27 +90,27 @@
 
                 });
 
-                hide = true;
-                $('body').on("click", function() {
-                    if (hide) $('.active').removeClass('active');
-                    hide = true;
-                });
+                // hide = true;
+                // $('body').on("click", function() {
+                //     if (hide) $('.active').removeClass('active');
+                //     hide = true;
+                // });
 
-                // add and remove .active
-                $('body').on('click', '.dropdown', function() {
+                // // add and remove .active
+                // $('body').on('click', '.dropdown', function() {
 
-                    var self = $(this);
+                //     var self = $(this);
 
-                    if (self.hasClass('active')) {
-                        $('.dropdown').removeClass('active');
-                        return false;
-                    }
+                //     if (self.hasClass('active')) {
+                //         $('.dropdown').removeClass('active');
+                //         return false;
+                //     }
 
-                    $('.dropdown').removeClass('active');
+                //     $('.dropdown').removeClass('active');
 
-                    self.toggleClass('active');
-                    hide = false;
-                });
+                //     self.toggleClass('active');
+                //     hide = false;
+                // });
 
 
 
@@ -135,7 +139,7 @@
             <div class="tag1">
                 <img src="img/flower.png">
                 <a href="#">
-                    <P class="mobtag" style="">100 % CANADIAN<br> DESIGNS</P>
+                    <P class="mobtag">100 % CANADIAN<br> DESIGNS</P>
                 </a>
             </div>
             <div class="tag2">
@@ -179,21 +183,45 @@
                         <P class="femm2"><a href="#">lipsum as it is sometimes known, dummy text</a></P>
                         <P class="femm2"><a href="#">lipsum as it is sometimes known, dummy text</a></P>
                     </div>
-                    <div class="fem_img">
-                        <div class="img1">
-                            <!-- <a href="#"><img class="wo_img" src="img/women1.png"></a> -->
+
+                    <div id="women-owl" class="owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="img/women1.png" alt="Owl Image">
                             <p class="wo_text"><a href="#">MEDINA</a></p>
                             <p class="wo_pp">$79.99</p>
                         </div>
-                        <div class="img2">
-                            <!-- <a href="#"><img class="wo_img" src="img/women2.png"></a> -->
-
+                        <div class="item">
+                            <img src="img/women2.png" alt="Owl Image">
                             <p class="wo_text"><a href="#">MEDINA</a></p>
-                            <p class="wo_pp">$119.99</p>
-
+                            <p class="wo_pp">$79.99</p>
                         </div>
+                        <div class="item">
+                            <img src="img/women1.png" alt="Owl Image">
+                            <p class="wo_text"><a href="#">MEDINA</a></p>
+                            <p class="wo_pp">$79.99</p>
+                        </div>
+                        <div class="item">
+                            <img src="img/women2.png" alt="Owl Image">
+                            <p class="wo_text"><a href="#">MEDINA</a></p>
+                            <p class="wo_pp">$79.99</p>
+                        </div>
+
                     </div>
-                    <div class="fem_dot"></div>
+                    <script>
+                        $(document).ready(function() {
+                            $("#women-owl").owlCarousel({
+                                autoPlay: 3000, //Set AutoPlay to 3 seconds
+
+                                items: 2,
+                                itemsDesktop: [1199, 2],
+                                itemsDesktopSmall: [979, 2],
+                                itemsTablet: [768, 2],
+                                itemsMobile: [426, 1]
+
+                            });
+
+                        });
+                    </script>
                 </div>
             </div>
             <div class="content3">
@@ -205,19 +233,43 @@
                         <P class="femm2"><a href="#">lipsum as it is sometimes known, dummy text</a></P>
                         <P class="femm2"><a href="#">lipsum as it is sometimes known, dummy text</a></P>
                     </div>
-                    <div class="fem_img">
-                        <div class="img11">
-                            <!-- <img class="wo_img" src="img/men1.png"></a> -->
-                            <p class="wo_text"><a href="#">MEDINA</a></p>
-                            <p class="wo_pp">$79.99</p>
-                        </div>
-                        <div class="img22">
-                            <!-- <a href="#"><img class="wo_img" src="img/men2.png"></a> -->
+
+                    <div id="men-owl" class="owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="img/men1.png" alt="Owl Image">
                             <p class="wo_text"><a href="#">MEDINA</a></p>
                             <p class="wo_pp">$119.99</p>
                         </div>
+                        <div class="item">
+                            <img src="img/men2.png" alt="Owl Image">
+                            <p class="wo_text"><a href="#">MEDINA</a></p>
+                            <p class="wo_pp">$119.99</p>
+                        </div>
+                        <div class="item">
+                            <img src="img/men1.png" alt="Owl Image">
+                            <p class="wo_text"><a href="#">MEDINA</a></p>
+                            <p class="wo_pp">$119.99</p>
+                        </div>
+                        <div class="item">
+                            <img src="img/men2.png" alt="Owl Image">
+                            <p class="wo_text"><a href="#">MEDINA</a></p>
+                            <p class="wo_pp">$119.99</p>
+                        </div>
+
                     </div>
-                    <div class="fem_dot"></div>
+                    <script>
+                        $(document).ready(function() {
+                            $("#men-owl").owlCarousel({
+                                autoPlay: 3000, //Set AutoPlay to 3 seconds
+                                items: 2,
+                                itemsDesktop: [1199, 2],
+                                itemsDesktopSmall: [979, 2],
+                                itemsTablet: [768, 2],
+                                itemsMobile: [426, 1]
+                            });
+
+                        });
+                    </script>
                 </div>
                 <div class="men">
                     <!-- <img class="men_img" src="img/menblack.png"> -->
@@ -229,33 +281,63 @@
             <div class="heading">
                 <p class="les_head">LES ESSENTIELS</p>
             </div>
-            <div class="images">
-                <div class="image1">
-                    <!-- <a href="#"><img class="men_img" src="img/men1.png"></a> -->
-                    <p class="toshow"><a href="#">MEDINA</a></p>
-                    <P class="toshow1">$79.99</P>
+
+            <div id="owl-demo" class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="img/men1.png" alt="Owl Image">
+                    <p class="wo_text"><a href="#">MEDINA</a></p>
+                    <p class="wo_pp">$119.99</p>
                 </div>
-                <div class="image2">
-                    <!-- <a href="#"><img class="men_img" src="img/men2.png"></a> -->
-                    <p class="toshow"><a href="#">MARIBEL</a></p>
-                    <P class="toshow1">$119.99</P>
+                <div class="item">
+                    <img src="img/men2.png" alt="Owl Image">
+                    <p class="wo_text"><a href="#">MEDINA</a></p>
+                    <p class="wo_pp">$119.99</p>
                 </div>
-                <div class="image3">
-                    <!-- <a href="#"><img class="men_img" src="img/men1.png"></a> -->
-                    <p class="toshow"><a href="#">MEDINA</a></p>
-                    <P class="toshow1">$79.99</P>
+                <div class="item">
+                    <img src="img/men1.png" alt="Owl Image">
+                    <p class="wo_text"><a href="#">MEDINA</a></p>
+                    <p class="wo_pp">$119.99</p>
                 </div>
-                <div class="image4">
-                    <!-- <a href="#"><img class="men_img" src="img/men2.png"></a> -->
-                    <p class="toshow"><a href="#">MARIBEL</a></p>
-                    <P class="toshow1">$119.99</P>
+                <div class="item">
+                    <img src="img/men2.png" alt="Owl Image">
+                    <p class="wo_text"><a href="#">MEDINA</a></p>
+                    <p class="wo_pp">$119.99</p>
                 </div>
-                <div class="image5">
-                    <!-- <a href="#"><img class="men_img" src="img/men1.png"></a> -->
-                    <p class="toshow"><a href="#">MEDINA</a></p>
-                    <P class="toshow1">$79.99</P>
+                <div class="item">
+                    <img src="img/men1.png" alt="Owl Image">
+                    <p class="wo_text"><a href="#">MEDINA</a></p>
+                    <p class="wo_pp">$119.99</p>
+                </div>
+                <div class="item">
+                    <img src="img/men2.png" alt="Owl Image">
+                    <p class="wo_text"><a href="#">MEDINA</a></p>
+                    <p class="wo_pp">$119.99</p>
+                </div>
+                <div class="item">
+                    <img src="img/men1.png" alt="Owl Image">
+                    <p class="wo_text"><a href="#">MEDINA</a></p>
+                    <p class="wo_pp">$119.99</p>
+                </div>
+                <div class="item">
+                    <img src="img/men2.png" alt="Owl Image">
+                    <p class="wo_text"><a href="#">MEDINA</a></p>
+                    <p class="wo_pp">$119.99</p>
                 </div>
             </div>
+            <script>
+                $(document).ready(function() {
+                    $("#owl-demo").owlCarousel({
+                        autoPlay: 3000, //Set AutoPlay to 3 seconds
+                        items: 5,
+                        itemsDesktop: [1199, 5],
+                        itemsDesktopSmall: [979, 3],
+                        itemsTablet: [768, 2],
+                        itemsMobile: [426, 1],
+                    });
+
+                });
+            </script>
+
         </div>
         <div class="footer">
             <div class="footer1">

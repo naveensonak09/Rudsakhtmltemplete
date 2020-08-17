@@ -74,6 +74,7 @@
         border: solid 1px #f0f0f0;
         box-shadow: 0 5px 8px -2px rgba(0, 0, 0, .25);
         right: 80px;
+        top: 45px;
         width: 20%;
         background: #fff;
         height: auto;
@@ -490,7 +491,7 @@
         text-align: center;
         letter-spacing: 1px;
         font-size: 14;
-        margin-top: 350px;
+        /* margin-top: 350px; */
         font-weight: 600;
     }
     
@@ -588,7 +589,7 @@
     }
     
     .footer {
-        margin-top: 450px;
+        margin-top: 20px;
         height: auto;
         width: 100%;
         margin-bottom: 20px;
@@ -706,9 +707,9 @@
     .show_curren {
         border: solid 1px #f0f0f0;
         box-shadow: 0 5px 8px -2px rgba(0, 0, 0, .25);
-        left: 110px;
+        left: 145px;
         width: 12%;
-        top: 3080px;
+        top: 2965px;
         height: auto;
         background: #fff;
         position: absolute;
@@ -735,6 +736,48 @@
         font-size: 13;
         letter-spacing: 1;
         font-weight: 600;
+    }
+    
+    #owl-demo .item {
+        margin: 3px 25px;
+    }
+    
+    #owl-demo .item img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    
+    #men-owl {
+        width: 60%;
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+    
+    #men-owl .item {
+        margin: 10px 6px;
+    }
+    
+    #men-owl .item img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    
+    #women-owl {
+        width: 60%;
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+    
+    #women-owl .item {
+        margin: 10px 6px;
+    }
+    
+    #women-owl .item img {
+        display: block;
+        width: 100%;
+        height: 300px;
     }
     
     @media only screen and (max-device-width: 426px) {
@@ -874,7 +917,7 @@
             margin-left: 40px;
         }
         .wo_text {
-            margin-top: 354px;
+            /* margin-top: 354px; */
             font-size: 26px;
             letter-spacing: 2;
         }
@@ -897,7 +940,7 @@
         }
         .femmes {
             width: 100%;
-            height: 677px;
+            height: auto;
         }
         .men {
             width: 100%;
@@ -905,7 +948,7 @@
         }
         .coursel {
             width: 100%;
-            margin-top: 3075px;
+            margin-top: 3220px;
             position: absolute;
         }
         .les_head {
@@ -934,7 +977,7 @@
             margin-right: 6px;
         }
         .footer {
-            margin-top: 3620px;
+            margin-top: 3730px;
         }
         .footer1 {
             background-color: #000;
@@ -1015,6 +1058,20 @@
             font-weight: 600;
             letter-spacing: 2px;
         }
+        #men-owl {
+            width: 60%;
+            margin-left: 120px;
+        }
+        #women-owl .item {
+            margin: 3px 30px;
+        }
+        #women-owl {
+            width: 60%;
+            margin-left: 120px;
+        }
+        #women-owl .item {
+            margin: 3px 30px;
+        }
     }
     
     @media only screen and (min-device-width: 427px) and (max-device-width: 768px) {
@@ -1054,7 +1111,7 @@
             margin-right: 6px;
         }
         .footer {
-            margin-top: 2225px;
+            margin-top: 2150px;
         }
         .footer2 {
             width: 100%;
@@ -1068,5 +1125,19 @@
         }
         .none {
             display: none;
+        }
+        #men-owl {
+            width: 60%;
+            margin-left: 50px;
+        }
+        #women-owl .item {
+            margin: 10px 5px;
+        }
+        #women-owl {
+            width: 60%;
+            margin-left: 50px;
+        }
+        #women-owl .item {
+            margin: 10px 5px;
         }
     }
